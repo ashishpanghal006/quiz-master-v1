@@ -1,0 +1,640 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body.body_container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.title h2 {
+    margin-bottom: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.quiz_master h2 {
+    margin-bottom: 20px;
+    color: #1d1919;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.login_form .input_form {
+    text-align: left;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.err_msg {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.mb-3 a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.mb-3 a:hover {
+    text-decoration: underline;
+}
+
+.my_container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+body.admin_home {
+    background-color: #f0f2f5;
+}
+
+.navbar {
+    background-color: #9aadc1 !important;
+}
+
+.navbar-text {
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Centering the search box in the navbar */
+form.d-flex {
+    flex: 1;
+    justify-content: center;
+}
+
+form.d-flex .form-control {
+    width: 300px;
+}
+
+.my_panel {
+    margin-bottom: 20px;
+}
+
+/* Subject cards styling */
+.card {
+    border: 2px solid black;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.sub_name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sub_description table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.add_chapter,
+.add_subject,
+.add_quiz {
+    margin-top: 15px;
+}
+
+/* Edit and Delete Button Styling */
+.edit{
+    color: #000;   /* Black for edit */
+    border: 2px solid black;
+    border-radius: 2px;
+    padding: 2px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.delete{
+    color: #dc3545;  /* Red for delete */
+    border: 2px solid #dc3545;
+    border-radius: 2px;
+    padding: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.action_btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Button improvements */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 15px;
+}
+
+.btn-outline-success {
+    border-color: #000000;
+    color: #000000;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Container for horizontal alignment */
+.subjects_container {
+    display: flex;
+    flex-direction: column;  /* Stack children vertically */
+    align-items: center; 
+    gap: 15px;          /* Adds spacing between cards */
+    padding: 10px;
+}
+
+/* Individual Card Styling */
+.card {
+    min-width: 280px;   /* Ensures each card has a fixed width */
+    max-width: 320px;   /* Prevents cards from becoming too wide */
+    border: 2px solid #007bff;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;     /* Prevents cards from shrinking */
+    margin:0px 100px;
+}
+
+.cards_container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+body.user_dashboard {
+    background-color: #f0f2f5;  /* Light background for better contrast */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container_sub1 {
+    background-color: #ffffff;  /* Clean white content area */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 40px auto;  /* Center the content */
+    max-width: 900px;   /* Optimized width for better focus */
+}
+
+.title h3 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.upcoming_quiz_table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;  /* Ensures rounded corners work for table */
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Soft shadow */
+}
+
+.upcoming_quiz_table thead th {
+    background-color: #9aadc1;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+}
+
+.upcoming_quiz_table tbody tr {
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.upcoming_quiz_table tbody tr:hover {
+    background-color: #e3f2fd;  /* Light blue on hover */
+}
+
+.upcoming_quiz_table td {
+    padding: 12px 15px;
+}
+
+.upcoming_quiz_table a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 6px 12px;
+    border: 1px solid #007bff;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.upcoming_quiz_table a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* No Quizzes Message */
+.container_sub1 p {
+    text-align: center;
+    font-weight: bold;
+    color: #dc3545; /* Red for attention */
+    margin-top: 20px;
+}
+
+.add_chapter_container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input_form_add_chap {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add_actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; /* Space between buttons */
+}
+
+.add_btn, .cancel_btn {
+    display: inline-block;
+}
+
+.add_subject_container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input_form_add_sub {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add_ques_container {
+    background-color: #f9f9f9;
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input_form_add_ques .mb-3 {
+    margin-bottom: 15px;
+}
+
+.upper_question_part {
+    margin-bottom: 30px;
+}
+
+.lower_question_part {
+    margin-bottom: 30px;
+}
+
+.add_quiz_container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input_form_add_quiz {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit_quiz_container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input_form_edit_quiz {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit_actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px; /* Space between buttons */
+}
+
+.save_btn, .cancel_btn {
+    display: inline-block;
+}
+
+.edit_chapter_container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input_form_edit_chapter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit_ques_container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input_form_edit_ques{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit_subject_container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input_form_edit_subject {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+/* quiz part........................................................................................... */
+.quiz_header_part {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #9aadc1;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.quiz_title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* #timer {
+    padding-left: 20px;
+    font-size: 18px;
+} */
+
+.time{
+    text-align: right;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.quiz_content_part {
+    margin: 100px auto 20px; /* Adjusted for fixed header */
+    width: 75%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Adding a gap between header and quiz content */
+.quiz_content_wrapper {
+    margin-top: 200px; /* Adjusted to prevent overlap */
+}
+
+.question_and_options {
+    border: 2px solid #ddd;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+.question_part {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.options {
+    margin-top: 10px;
+}
+
+/* scores part......................................................................... */
+.scores_container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.scores_container .title h3{
+    margin-bottom: 20px;
+    color: black;
+}
+
+.scores_display {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.scores_display th, .scores_display td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.scores_display th {
+    background-color: #9aadc1;
+    color: white;
+}
+
+.scores_display tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* admin summary....................................................................... */
+.admin_summary_container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table_in_admin_summary {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table_in_admin_summary th, .table_in_admin_summary td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table_in_admin_summary th {
+    background: #9aadc1;
+    color: white;
+}
+
+.table_in_admin_summary tr:hover {
+    background: #f1f1f1;
+}
+
+.display_chart {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.display_chart .title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.image_display img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* user summary................................................................ */
+.user_summary_container {
+    width: 80%;
+    margin: 30px auto;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table_in_user_summary {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table_in_user_summary th, .table_in_user_summary td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table_in_user_summary th {
+    background-color:#9aadc1;
+    color: white;
+    font-weight: bold;
+}
+
+.table_in_user_summary tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table_in_user_summary tr:hover {
+    background-color: #dbe2ef;
+    transition: 0.3s;
+}
